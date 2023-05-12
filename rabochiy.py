@@ -333,7 +333,7 @@ def handle_command(message):
                                 bot.send_message(chat_id='-1001955843413', text= site + " "+ "FAIL")
                                 faillinks.append(site)
                             except Exception as e:
-                                print(f'Ошибка при обработке сайта {site}: {str(e)}')
+                                print('Ошибка при обработке сайта' + site}
 
                                 continue
 
