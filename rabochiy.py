@@ -10,13 +10,13 @@ bot = telebot.TeleBot(bot_token)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Нажмите кнопку для запуска скрипта', reply_markup=get_keyboard())
+    bot.send_message(message.chat.id, 'Type', reply_markup=get_keyboard())
 
 passlinks = []
 faillinks = []
 @bot.message_handler(func=lambda message: True)
 def handle_command(message):
-    bot.send_message(message.chat.id, 'Запуск скрипта...')
+    bot.send_message(message.chat.id, 'Script started')
     # bot.send_message(chat_id='-1001955843413', text= "Запуск скрипта")
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
