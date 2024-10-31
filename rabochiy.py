@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-bot_token = '6105542352:AAE0Bz8_g-ADYTTIDz9C_fc1MeLwz6Hyl0Q'
+bot_token = 'telegram bot token'
 bot = telebot.TeleBot(bot_token)
 
 
